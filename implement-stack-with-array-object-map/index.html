@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Implement Stack with Array, Object or Map</title>
+  <link href="../main.css" rel="stylesheet">
+  <style>
+    main {
+      width: 100%;
+      max-width: 640px;
+      margin: auto;
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h3>Testing Performance - Implement Stack with Array, Object or Map</h3>
+    <form id="form1">
+      <select>
+        <option value="array">Array</option>
+        <option value="object">Object</option>
+        <option value="map">Map</option>
+      </select>
+
+      <label for="capability">Capability</label>
+      <input type="number" name="capability" value="50000000">
+      <small>Capability is the maximum size of Stack. 
+        If this value is too small, the result may be incorrect. 
+        Otherwise, if it is too large, your browse may be freeze. 
+        Recommended and Default value: 50000000.</small>
+
+      <label for="testcase">Testcase</label>
+      <input type="number" name="testcase" value="10">
+      <small>Testcase is a number of testcase to test. Default value: 10</small>
+      <br/><br/>
+
+      <input type="submit" value="Test">
+      <br/>
+      <small>Open Console (DevTool) by press (Ctrl + Shift + I) or F12 to watch the result.</small>
+    </form>
+  </main>
+
+  <script src="stack-with-array.js"></script>
+  <script src="stack-with-object.js"></script>
+  <script src="stack-with-map.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
