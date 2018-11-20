@@ -22,7 +22,7 @@ class MStack {
   pop() {
     if (this.isEmpty()) return undefined; 
 
-    let item = this.data.get(this.size - 1);
+    let item = this.data.get(this.data.size - 1);
     this.data.delete(this.data.size - 1);
     return item;
   }
