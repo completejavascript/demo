@@ -15,7 +15,7 @@ class MStack {
   push(item) {
     if (this.isFull()) return false;
 
-    this.data.set(this.size, item);
+    this.data.set(this.data.size, item);
     return true;
   }
 
@@ -23,7 +23,7 @@ class MStack {
     if (this.isEmpty()) return undefined; 
 
     let item = this.data.get(this.size - 1);
-    this.data.delete(this.size - 1);
+    this.data.delete(this.data.size - 1);
     return item;
   }
 
