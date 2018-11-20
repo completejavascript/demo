@@ -37,5 +37,6 @@ class OStack {
 
   clear() {
     while(!this.isEmpty()) this.pop();
+    this.size = 0;
   }
 }
