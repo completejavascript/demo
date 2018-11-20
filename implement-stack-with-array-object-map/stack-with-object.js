@@ -10,7 +10,7 @@ class OStack {
   }
 
   isFull() {
-    return this.data.size === this.capability;
+    return this.size === this.capability;
   }
 
   push(item) {
@@ -32,7 +32,7 @@ class OStack {
 
   peek() {
     if (this.isEmpty()) return undefined;
-    return this.data[this.data.size - 1];
+    return this.data[this.size - 1];
   }
 
   clear() {
